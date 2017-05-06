@@ -1,8 +1,8 @@
 'use strict';
-const RippleAPI = require('../../src').RippleAPI; // require('ripple-lib')
+const RippleAPI = require('ripple-lib').RippleAPI; // require('ripple-lib')
 
-const address = 'INSERT ADDRESS HERE';
-const secret = 'INSERT SECRET HERE';
+const address = 'INSERT ADDRESS HERE'; // insert your ripple address
+const secret = 'INSERT SECRET HERE'; // insert your secret key
 
 const api = new RippleAPI({server: 'wss://s1.ripple.com:443'});
 const instructions = {maxLedgerVersionOffset: 5};
